@@ -1,0 +1,105 @@
+/* RESETEO Y FUENTES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    font-family: sans-serif;
+    background-color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* ENCABEZADO */
+  .header {
+    background-color: #3caf50;
+    padding: 15px;
+    color: white;
+    text-align: left;
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 20px;
+  }
+  
+  /* CONTENIDO PRINCIPAL */
+  .content {
+    flex: 1;
+    width: 80%;
+    max-width: 700px;
+    margin: 40px auto;
+    text-align: center;
+  }
+  
+  /* Cuadro del menú */
+  .menu-box {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  /* Parte superior: Nombre del usuario */
+  .menu-box-header {
+    background-color: #e6e6e6;
+    padding: 10px;
+  }
+  
+  .menu-box-header p {
+    margin: 0;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Parte inferior: Opciones del menú */
+  .menu-box-body {
+    padding: 20px;
+  }
+  
+  .menu-box-body h2 {
+    color: #3caf50;
+    margin-bottom: 10px;
+  }
+  
+  .user-email {
+    color: grey;
+    margin-bottom: 20px;
+  }
+  
+  /* Lista de enlaces (azul subrayado) */
+  .menu-links {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .menu-links li {
+    margin-bottom: 10px;
+  }
+  
+  .menu-links a {
+    color: blue;
+    text-decoration: underline;
+    font-size: 16px;
+  }
+  
+  /* PIE DE PÁGINA */
+  .footer {
+    background-color: #3caf50;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .footer-logo {
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+  }
+  

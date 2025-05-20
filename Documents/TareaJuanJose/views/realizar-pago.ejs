@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Realizar Pago - paGon</title>
+  <link rel="stylesheet" href="/realizar-pago.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">paGon</div>
+  </header>
+
+  <main class="content">
+    <h1>Realizar Pago</h1>
+    <form id="pagoForm" method="POST" action="/realizar-pago">
+      <div class="form-group">
+        <label for="monto" class="label-bold">Monto</label>
+        <input type="number" id="monto" name="monto" required>
+      </div>
+      <div class="form-group">
+        <label for="metodo" class="label-bold">Método de Pago</label>
+        <select id="metodo" name="metodo" required>
+          <option value="tarjeta">Tarjeta de Crédito/Débito</option>
+          <option value="efectivo">Efectivo</option>
+          <option value="transferencia">Transferencia Bancaria</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="descripcion" class="label-bold">Descripción</label>
+        <textarea id="descripcion" name="descripcion" required></textarea>
+      </div>
+      <button type="submit" class="submit-btn">Realizar Pago</button>
+    </form>
+  </main>
+
+  <footer class="footer">
+    <p>paGon es un proyecto desarrollado desde 2023 en el marco del programa de Análisis y Desarrollo de Software del SENA</p>
+    <img src="/github-icon.png" alt="Logo" class="footer-logo">
+  </footer>
+</body>
+</html>

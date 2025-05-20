@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Historial de Transacciones</title>
+  <link rel="stylesheet" href="/historial-transacciones.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">paGon</div>
+  </header>
+
+  <main class="content">
+    <h1>Historial de Transacciones</h1>
+    <h2>Bienvenido: <%= nombre %></h2>
+
+    <% if (pagos.length === 0) { %>
+      <p>No hay transacciones registradas.</p>
+    <% } else { %>
+      <table class="tabla-transacciones">
+        <thead>
+          <tr>
+            <th>Fecha</th>
+            <th>Monto</th>
+            <th>Método</th>
+            <th>Descripción</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% for (let pago of pagos) { %>
+            <tr>
+              <td><%= new Date(pago.fecha).toLocaleString() %></td>
+              <td>$<%= pago.monto.toFixed(2) %></td>
+              <td><%= pago.metodo %></td>
+              <td><%= pago.descripcion %></td>
+            </tr>
+          <% } %>
+        </tbody>
+      </table>
+    <% } %>
+  </main>
+
+  <footer class="footer">
+    <p>paGon es un proyecto desarrollado desde 2023 en el marco del programa de Análisis y Desarrollo de Software del SENA</p>
+    <img src="/github-icon.png" alt="Logo" class="footer-logo">
+  </footer>
+</body>
+</html>

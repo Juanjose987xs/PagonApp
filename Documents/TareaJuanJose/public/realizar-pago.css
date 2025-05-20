@@ -1,0 +1,138 @@
+/* Estilos generales para todo el cuerpo */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
+
+/* ENCABEZADO */
+.header {
+  background-color: #3caf50;
+  padding: 15px;
+  color: white;
+  text-align: left;
+  font-size: 24px;
+  font-weight: bold;
+  padding-left: 20px;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Contenido principal */
+.content {
+  padding: 20px;
+}
+
+/* Estilos para el formulario de pago */
+form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px; /* Limitar el ancho máximo */
+  margin: 0 auto;   /* Centrado horizontal */
+}
+
+/* Espaciado entre los campos del formulario */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Etiquetas de los campos */
+label {
+  font-weight: bold;
+  font-size: 1.1em; /* Aumentar el tamaño para mejor legibilidad */
+}
+
+/* Estilos de los campos de entrada (inputs, select y textarea) */
+input[type="text"],
+input[type="number"],
+input[type="email"],
+textarea {
+  width: 90%;          /* Campos más cortos horizontalmente */
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: block;      /* Para que ocupe toda la línea */
+  margin-bottom: 10px; /* Espacio debajo de los campos */
+  font-size: 1em;      /* Tamaño de fuente cómodo */
+}
+
+/* Estilos del botón de submit */
+.submit-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1em;   /* Aumenta un poco el tamaño del botón */
+  display: block;     /* Para que el botón ocupe toda la línea */
+  margin-top: 20px;   /* Espacio por encima del botón */
+  width: 50%;         /* Hacer el botón del mismo tamaño que los campos */
+  margin-left: auto;  /* Centrar el botón */
+  margin-right: auto; /* Centrar el botón */
+}
+
+/* Efecto hover para el botón */
+.submit-btn:hover {
+  background-color: #45a049;
+}
+
+/* PIE DE PÁGINA */
+.footer {
+  background-color: #3caf50;
+  padding: 15px;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-logo {
+  width: 30px;
+  height: 30px;
+  margin-left: 20px;
+}
+
+/* Título principal "Realizar Pago" */
+h1 {
+  text-align: center;    /* Centra el título */
+  color: green;          /* Título en verde */
+  font-size: 2.5em;      /* Título más grande */
+  margin-bottom: 20px;   /* Espacio debajo del título */
+}
+
+/* Subtítulos */
+h2 {
+  font-size: 1.5em;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Estilo para la etiqueta en negrita */
+.label-bold {
+  font-weight: bold;
+  font-size: 1.1em; /* Aumentar tamaño de la fuente */
+}
+
+/* Estilo para el cuadro de selección de métodos de pago */
+select#metodo {
+  width: 90%;          /* Hace que el cuadro ocupe todo el ancho disponible */
+  padding: 12px;        /* Espacio en el interior del cuadro */
+  font-size: 1.1em;     /* Aumenta el tamaño de la fuente dentro del cuadro */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: block;
+  margin-bottom: 10px;  /* Espacio debajo del select */
+}

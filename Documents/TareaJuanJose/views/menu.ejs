@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Menú - paGon</title>
+  <link rel="stylesheet" href="/menu.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">paGon</div>
+  </header>
+  <main class="content">
+    <div class="menu-box">
+      <!-- Parte superior con el nombre del usuario -->
+      <div class="menu-box-header">
+        <p>|| <%= nombre %> ||</p>
+      </div>
+      <!-- Parte inferior con el menú -->
+      <div class="menu-box-body">
+        <h2>Bienvenido a tu Menú</h2>
+        <p class="user-email"><%= correo %></p>
+        <ul class="menu-links">
+          <li><a href="/realizar-pago">Realizar pagos</a></li>
+          <li><a href="/historial-transacciones">Historial de transacciones</a></li>
+          <li><a href="/configuracion-cuenta">Configuración de cuenta</a></li>
+          <li><a href="/mensajes-promociones">Mensajes y promociones</a></li>
+          <li><a href="/ayuda">Ayuda</a></li>
+          <li><a href="/logout" style="color: red;">Cerrar sesión</a></li>
+        </ul>        
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <p>paGon es un proyecto desarrollado desde 2023 en el marco del programa de Análisis y Desarrollo de Software del SENA</p>
+    <img src="/github-icon.png" alt="Logo" class="footer-logo">
+  </footer>
+</body>
+</html>

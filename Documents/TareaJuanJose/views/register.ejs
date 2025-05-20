@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registrarse - paGon</title>
+  <link rel="stylesheet" href="/register.css">
+</head>
+<body>
+  <!-- Encabezado -->
+  <header class="header">
+    <div class="logo">paGon</div>
+  </header>
+  
+  <!-- Contenido principal -->
+  <main class="content">
+    <h1>Registrarse</h1>
+    <form id="registerForm">
+      <!-- Campo: Nombre Completo con tooltip -->
+      <div class="form-group">
+        <label for="nombre" class="label-bold">Nombre Completo</label>
+        <div class="input-container">
+          <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre completo" required>
+          <span class="error-message-left" id="nombreError">
+            Ingresa tu nombre completo tal como aparece en tu documento oficial.
+          </span>
+        </div>
+      </div>
+      <!-- Campo: Correo Electrónico -->
+      <div class="form-group">
+        <label for="correo" class="label-bold">Correo Electrónico</label>
+        <input type="email" id="correo" name="correo" placeholder="Ingresa tu correo electrónico" required>
+        <span class="error-message">Ingresa un correo electrónico válido.</span>
+      </div>
+      <!-- Campo: Contraseña -->
+      <div class="form-group">
+        <label for="password" class="label-bold">Contraseña</label>
+        <input type="password" id="password" name="password" placeholder="Ingresa tu contraseña" required>
+        <span class="error-message">Ingresa tu contraseña (mínimo 6 caracteres).</span>
+      </div>
+      <!-- Botón de Registrarse -->
+      <button type="submit" class="register-btn">Registrarse</button>
+    </form>
+  </main>
+  
+  <!-- Popup emergente para error de correo duplicado -->
+  <div class="error-popup" id="errorPopup">
+    <div class="error-popup-content">
+      <p id="errorPopupMessage"></p>
+      <button id="errorPopupBtn" class="error-popup-btn" onclick="redirectToLogin()">Aceptar</button>
+    </div>
+  </div>
+  
+  <!-- Pie de página -->
+  <footer class="footer">
+    <p>paGon es un proyecto desarrollado desde 2023 en el marco del programa de Análisis y Desarrollo de Software del SENA</p>
+    <img src="/github-icon.png" alt="Logo" class="footer-logo">
+  </footer>
+  
+  <script src="/register.js"></script>
+</body>
+</html>

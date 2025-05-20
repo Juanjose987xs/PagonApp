@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header {
+    background-color: #3caf50;
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 20px;
+  }
+  
+  .logo {
+    font-size: 30px;
+  }
+  
+  .content {
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: green;
+    font-size: 2.5em;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #555;
+    font-size: 1.3em;
+    margin-bottom: 20px;
+  }
+  
+  .tabla-transacciones {
+    width: 90%;
+    margin: auto;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background: white;
+  }
+  
+  .tabla-transacciones th, .tabla-transacciones td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: center;
+  }
+  
+  .tabla-transacciones th {
+    background-color: #3caf50;
+    color: white;
+  }
+  
+  .tabla-transacciones tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .footer {
+    background-color: #3caf50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .footer-logo {
+    width: 30px;
+    height: 30px;
+  }
+  

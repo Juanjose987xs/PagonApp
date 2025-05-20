@@ -1,0 +1,70 @@
+/* General */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ENCABEZADO */
+.header {
+  background-color: #3caf50;
+  color: white;
+  padding: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.logo {
+  font-size: 30px;
+}
+
+/* CONTENIDO */
+.content {
+  flex: 1; /* Ocupa el espacio disponible */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+h1 {
+  color: green;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.mensaje {
+  font-size: 18px;
+  color: #444;
+  margin: 10px 0;
+  max-width: 700px;
+}
+
+/* PIE DE PÁGINA */
+.footer {
+  background-color: #3caf50;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-logo {
+  width: 30px;
+  height: 30px;
+}

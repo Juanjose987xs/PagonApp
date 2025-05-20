@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Configuración de Cuenta - paGon</title>
+  <link rel="stylesheet" href="/configuracion-cuenta.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">paGon</div>
+  </header>
+
+  <main class="content">
+    <h1>Configuración de Cuenta</h1>
+
+    <section>
+      <h2>Actualizar Información</h2>
+      <form action="/actualizar-cuenta" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" value="<%= nombre %>" required>
+
+        <label for="correo">Correo:</label>
+        <input type="email" id="correo" name="correo" value="<%= correo %>" required>
+
+        <button type="submit">Actualizar</button>
+      </form>
+    </section>
+
+    <section class="eliminar">
+      <h2>Eliminar Cuenta</h2>
+      <form action="/eliminar-cuenta" method="POST" onsubmit="return confirm('¿Estás seguro de que deseas eliminar tu cuenta? Esta acción no se puede deshacer.');">
+        <button type="submit" class="btn-danger">Eliminar cuenta</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>paGon es un proyecto desarrollado desde 2023 en el marco del programa de Análisis y Desarrollo de Software del SENA</p>
+    <img src="/github-icon.png" alt="Logo" class="footer-logo">
+  </footer>
+</body>
+</html>

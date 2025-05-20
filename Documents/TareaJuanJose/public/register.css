@@ -1,0 +1,178 @@
+/* RESETEO Y FUENTES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: sans-serif;
+  background-color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ENCABEZADO */
+.header {
+  background-color: #3caf50;
+  padding: 15px;
+  color: white;
+  text-align: left;
+  font-size: 24px;
+  font-weight: bold;
+  padding-left: 20px;
+}
+
+/* CONTENIDO PRINCIPAL */
+.content {
+  flex: 1;
+  width: 90%;
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  text-align: left;
+}
+
+h1 {
+  text-align: center;
+  color: #3caf50;
+  margin-bottom: 30px;
+}
+
+/* FORMULARIO */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.label-bold {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Contenedor para el input y el tooltip */
+.input-container {
+  position: relative;
+  width: 100%;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Tooltip emergente para el mensaje en rojo */
+.error-message-left {
+  position: absolute;
+  top: 50%;
+  left: -320px;
+  transform: translateY(-50%);
+  background-color: red;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+  z-index: 10;
+}
+
+/* Cuando se muestra el tooltip */
+.input-container.show-tooltip .error-message-left {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Mensajes de error para otros campos */
+.error-message {
+  display: none;
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/* Botón de Registro */
+.register-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #3caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.register-btn:hover {
+  background-color: #2e8b3c;
+}
+
+/* POPUP de error */
+.error-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.error-popup-content {
+  background-color: #fff;
+  padding: 20px 30px;
+  border-radius: 8px;
+  text-align: center;
+  max-width: 400px;
+}
+
+#errorPopupMessage {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.error-popup-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.error-popup-btn:hover {
+  background-color: #0056b3;
+}
+
+/* PIE DE PÁGINA */
+.footer {
+  background-color: #3caf50;
+  padding: 15px;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-logo {
+  width: 30px;
+  height: 30px;
+  margin-left: 20px;
+}
